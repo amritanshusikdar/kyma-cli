@@ -29,7 +29,7 @@ type Config struct {
 	Labels             map[string]string          `yaml:"labels" comment:"optional, additional labels for the ModuleTemplate"`
 	Annotations        map[string]string          `yaml:"annotations" comment:"optional, additional annotations for the ModuleTemplate"`
 	CustomStateChecks  []v1beta2.CustomStateCheck `yaml:"customStateCheck" comment:"optional, specifies custom state check for module"`
-	EnableModuleConfig bool                       `yaml:"enableModuleConfig" comment:"optional, default=false, to let the LifecycleManager know which module CR should be synced back to the KCP"`
+	EnableModuleConfig bool                       `yaml:"enableModuleConfig" comment:"optional, default=false, specifies if the Module CR will be synced from SKR to KCP"`
 }
 
 const (
